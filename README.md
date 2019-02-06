@@ -24,7 +24,7 @@ The refresher does not have to be submitted.
 __Discussion__
 
 Please use the following avenues which are listed in decreasing order of preference.
-- the [class forum](https://habibedu.facebook.com/groups/354167592088891/)
+- the [class forum](https://workplace.facebook.com/groups/354167592088891/)
 - discuss with your peers
 - talk to me in our meeting
 - talk to me after class
