@@ -1,13 +1,17 @@
-# CSCI 155 Computer Graphics, Spring 2019
-## Refresher
+# Refresher
+## CSCI 155 Computer Graphics, Spring 2019
 
 __Purpose__
 
-This refresher provides an indication of what you are expected to know coming into this course. You may find some required details missing in some of the questions below. If so, it is assumed that you are knowledgeable enough to make reasonable decisions based on the context and/or the provided information.
+This refresher provides an indication of what you are expected to know coming into this course. You may find some required details missing in some of the questions. If so, it is assumed that you are knowledgeable enough to make reasonable decisions based on the context and/or the provided information.
 
 __Background__
 
 You need not be on top of the math or the coding but it is expected that you have sufficient background to understand the pages that show up when you search online for help.
+
+__The Problem Set__
+
+The problems are in `main.tex` which is to be compiled using a LaTeX compiler.
 
 __Grading__
 
