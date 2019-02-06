@@ -1,0 +1,99 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath}
+\usepackage{esvect}
+\usepackage{url} 
+
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CSCI 155}{Refresher}{Spring 2019}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+\qformat{{\large\bf Problem \thequestion. \thequestiontitle}\hfill}
+
+\title{Refresher}
+\author{CSCI 155 Computer Graphics\\Pitzer College}
+\date{Spring 2019}
+
+\begin{document}
+\maketitle
+
+This refresher provides an indication of what you are expected to know coming into this course. You may find in some of the questions below that required details are missing. If so, it is assumed that you are knowledgeable enough to make reasonable decisions based on the context and/or the provided information. You need not be on top of the math but it is expected that you have sufficient background to understand the pages that show up when you search online for help.
+
+The refresher is not graded and does not have to be submitted. If there is something in it that you would like to discuss, I will be happy to do so in our meeting. You are welcome to post to the forum in the meanwhile.
+
+\begin{questions}
+
+  \titledquestion{Matrix Arithmetic}
+  \begin{parts}
+    \part Write down the 3x3 {\it identity matrix}.
+    \part\label{transform} Given an $n\times n$ matrix, $A$, a vector, $x$, and the equation below
+    \[ Ax = b, \]
+    what are the dimensions of $x$ and $b$?
+    \part Write down an expression for $x$ in (\ref{transform}).
+    \part\label{eq} Write the following system of equations in matrix form.
+    \begin{align*}
+      2x + y - 2z	& =  3\\
+      x - y - z & =	0\\
+      x + y + 3z & = 12
+    \end{align*}
+    \part Solve the system of equations from (\ref{eq}).
+    \part Find the transpose and inverse of the matrix
+    \[
+      \left(
+        \begin{array}{ccc}
+          1 & 2 & 1\\
+          1 & 1 & 1\\
+          2 & 1 & 1
+        \end{array}
+      \right)
+    \].
+  \end{parts}    
+
+  \titledquestion{Vectors}
+  Given the points $P(1,-2,0)$, $Q(3,1,4)$, and $R(0,-1,2)$, determine
+  \begin{parts}
+    \part the vectors $\vv{PQ}$ and $\vv{PR}$.
+    \part the angle between the vectors $\vv{PQ}$ and $\vv{PR}$.
+    \part a vector perpendicular to both $\vv{PQ}$ and $\vv{PR}$.
+    \part the length of the projection of $\vv{PR}$ on $\vv{PQ}$.
+  \end{parts}
+
+  \titledquestion{Geometry}
+  Given the points $P(1,-2,0)$, $Q(3,1,4)$, and $R(0,-1,2)$, determine the {\it vector}, {\it scalar}, and {\it parametric} equations of the following.
+  \begin{parts}
+    \part the ray starting at $P$ and passing through $Q$.
+    \part the circle with center at $P$ and passing through $Q$.
+    \part the plane containing the points $P$, $Q$, and $R$.
+  \end{parts}
+
+  \titledquestion{Vector Class}
+  Implement a class, {\tt Vector}, in C++ to represent a 3D vector and define the following operations for it. Decide in each case whether the operation should be implemented as a method or an external function.
+  \begin{parts}
+    \part \underline{\tt dot}:  takes another {\tt Vector} object as a parameter and returns the dot product.
+    \part \underline{\tt cross}: takes another {\tt Vector} object as a parameter and returns the cross product.
+    \part \underline{\tt operator+}: takes another {\tt Vector} object as a parameter and returns the vector sum.
+    \part \underline{\tt operator+=}: takes another {\tt Vector} object as a parameter and adds it to this {\tt Vector}.
+    \part \underline{\tt operator-}: takes another {\tt Vector} object as a parameter and returns the vector difference.
+    \part \underline{\tt operator-=}: takes another {\tt Vector} object as a parameter and subtracts it from the {\tt Vector}.
+    \part \underline{\tt operator*}: takes a scalar as a parameter and returns the scaled vector. The operation must be commutative.
+    \part \underline{\tt operator*=}: takes a scalar as a parameter and scales this {\tt Vector}.
+    \part \underline{\tt norm}: returns the norm or magnitude of this {\tt Vector}.
+    \part \underline{\tt normalize}: normalizes this {\tt Vector}.
+    \part \underline{\tt operator-}: negates this {\tt Vector}.
+  \end{parts}
+
+\end{questions}
+
+\section*{Credits}
+Some of the questions have been adapted from:
+\begin{itemize}
+\item \url{https://math.dartmouth.edu/archive/m8s00/public_html/handouts/matrices3/node4.html}.
+\item \url{http://tutorial.math.lamar.edu/Classes/CalcIII/EqnsOfPlanes.aspx}.
+\end{itemize}
+
+\end{document}
